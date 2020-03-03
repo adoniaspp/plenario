@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plenario_virtual/Style/Colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'Visao/lista_sessoes.dart';
 import 'Visao/login.dart';
 
 void main() => runApp(MyApp());
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
       theme: _buildMppaTheme(),
       routes: {
         '/': (context) => Login(),
-        //'/listaSessoes': (context) => ListaSessoes(),
+        '/listaSessoes': (context) => ListaSessoes(),
       },
       debugShowCheckedModeBanner: false,
     );
